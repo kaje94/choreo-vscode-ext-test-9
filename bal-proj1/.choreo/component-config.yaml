@@ -1,7 +1,7 @@
 apiVersion: core.choreo.dev/v1alpha1
 kind: ComponentConfig
 metadata:
-    name: tesdodcc
+    name: bal-proj-dep-test
     projectName: Default Project
     annotations:
         componentType: service
@@ -9,8 +9,8 @@ spec:
     build:
         branch: main
     inbound:
-        - name: tesdODcc
+        - name: bal-proj-dep-test
           port: 9090
           type: REST
-          visibility: Project
+          visibility: Public
           context: /
